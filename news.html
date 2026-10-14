@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoteles | Argueta Explora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #logo img { width:118px; height:112px; object-fit:contain; }
+        #contents .body { padding:22px; }
+        #contents h1 { color:#246b5c; text-align:center; }
+        #contents .intro { font-size:17px; line-height:1.8; }
+        #hoteles { list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+        #hoteles li { background:#fff; padding:16px; border-radius:12px; box-shadow:0 4px 14px #0002; }
+        #hoteles img { width:100%; height:190px; object-fit:cover; border-radius:8px; }
+        #hoteles h2 { color:#246b5c; }
+        #hoteles p { line-height:1.7; }
+        @media(max-width:600px) { #hoteles { grid-template-columns:1fr; } }
+    </style>
+</head>
+<body>
+<div id="background"><div id="page">
+    <div id="header">
+        <div id="logo"><a href="index.html"><img src="images/logo.png" alt="Argueta Explora"></a></div>
+        <div id="navigation"><ul>
+            <li><a href="index.html">Inicio</a></li><li><a href="about.html">Historia</a></li>
+            <li><a href="rooms.html">Lugares turísticos</a></li><li><a href="dives.html">Naturaleza</a></li>
+            <li><a href="foods.html">Gastronomía</a></li><li class="selected"><a href="news.html">Hoteles</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul></div>
+    </div>
+    <div id="contents"><div class="box"><div><div class="body">
+        <h1>Hoteles de Francisco Morazán</h1>
+        <p class="intro">
+            Si planeas visitar Francisco Morazán, puedes investigar opciones
+            de alojamiento en Tegucigalpa y en los municipios turísticos.
+            Verifica siempre la disponibilidad, los servicios y los precios
+            directamente con cada establecimiento.
+        </p>
+        <ul id="hoteles">
+            <li>
+                <img src="images/hotel-alameda.jpg" alt="Hotel Alameda">
+                <h2>Hotel Alameda</h2>
+                <p>Opción de alojamiento que puedes consultar para organizar una estadía en Tegucigalpa.</p>
+            </li>
+            <li>
+                <img src="images/hotel-la-casona.jpg" alt="Hotel La Casona">
+                <h2>Hotel La Casona</h2>
+                <p>Consulta su ubicación, habitaciones, tarifas y servicios antes de realizar una reserva.</p>
+            </li>
+            <li>
+                <img src="images/hotel-casa-blanca.jpg" alt="Hotel Casa Blanca">
+                <h2>Hotel Casa Blanca</h2>
+                <p>Comprueba directamente con el establecimiento si cuenta con habitaciones disponibles.</p>
+            </li>
+            <li>
+                <img src="images/posada del angel.jpg" alt="Posada del Ángel">
+                <h2>Posada del Ángel</h2>
+                <p>Una opción que puedes investigar al preparar tu visita y comparar alternativas de alojamiento.</p>
+            </li>
+            <li>
+                <img src="images/hotel-san-jose.jpg" alt="Hotel San José">
+                <h2>Hotel San José</h2>
+                <p>Confirma la dirección exacta y los servicios ofrecidos antes de viajar.</p>
+            </li>
+            <li>
+                <img src="images/hotel-villas-del-valle.jpg" alt="Hotel Villas del Valle">
+                <h2>Villas del Valle</h2>
+                <p>Consulta información actualizada sobre precios, ubicación y condiciones de hospedaje.</p>
+            </li>
+        </ul>
+        <p>
+        </p>
+    </div></div></div></div>
+</div>
+<div id="footer"><div><ul class="navigation">
+    <li><a href="index.html">Inicio</a></li><li><a href="about.html">Historia</a></li>
+    <li><a href="rooms.html">Lugares turísticos</a></li><li><a href="dives.html">Naturaleza</a></li>
+    <li><a href="foods.html">Gastronomía</a></li><li class="active"><a href="news.html">Hoteles</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+</ul></div><p>© 2026 Argueta Explora. Todos los derechos reservados.</p></div>
+</div>
+</body>
+</html>

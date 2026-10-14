@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Argueta Explora - Francisco Morazán</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+        /* LOGO */
+        #logo {
+            width: 320px;
+            height: 125px;
+            display: flex;
+            align-items: center;
+        }
+
+        #logo a {
+            display: block;
+        }
+
+        #logo .logo-imagen {
+            width: 290px;
+            height: 120px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* TÍTULOS */
+        h1, h2, h3 {
+            color: #008b8b;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 19px;
+        }
+
+        /* ENLACES */
+        a {
+            color: #e87519;
+        }
+
+        a:hover {
+            color: #008b8b;
+        }
+
+        /* TEXTO DESTACADO */
+        strong {
+            color: #d96a12;
+        }
+
+        /* IMAGEN PRINCIPAL */
+        #adbox {
+            overflow: hidden;
+        }
+
+        #adbox > img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        #contents {
+            display: block;
+            overflow: hidden;
+        }
+
+        #main {
+            width: 100%;
+            box-sizing: border-box;
+            float: none;
+        }
+
+        #main p,
+        #main li {
+            line-height: 1.7;
+        }
+
+        #main ul {
+            padding-left: 25px;
+        }
+
+        /* PIE DE PÁGINA */
+        #footer {
+            text-align: center;
+        }
+
+        #connect {
+            line-height: 2;
+        }
+
+        /* ADAPTACIÓN PARA CELULARES */
+        @media screen and (max-width: 600px) {
+            #page {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            #header {
+                height: auto;
+            }
+
+            #logo {
+                width: 100%;
+                height: auto;
+                justify-content: center;
+            }
+
+            #logo .logo-imagen {
+                width: 260px;
+                height: 110px;
+                max-width: 100%;
+            }
+
+            #navigation ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 0;
+            }
+
+            #navigation li {
+                margin: 3px;
+            }
+
+            #adbox > img {
+                width: 100%;
+                height: auto;
+            }
+
+            #contents {
+                padding: 10px;
+            }
+
+            #main {
+                width: 100%;
+                float: none;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-size: 21px;
+            }
+
+            #footer {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="background">
+        <div id="page">
+
+            <!-- ENCABEZADO -->
+            <div id="header">
+
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png"
+                             alt="Logo de Argueta Explora"
+                             class="logo-imagen">
+                    </a>
+                </div>
+
+                <!-- MENÚ DE NAVEGACIÓN -->
+                <div id="navigation">
+                    <ul>
+                        <li class="selected">
+                            <a href="index.html">Inicio</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">Historia</a>
+                        </li>
+
+                        <li>
+                            <a href="rooms.html">Lugares turísticos</a>
+                        </li>
+
+                        <li>
+                            <a href="dives.html">Naturaleza</a>
+                        </li>
+
+                        <li>
+                            <a href="foods.html">Gastronomía</a>
+                        </li>
+
+                        <li>
+                            <a href="news.html">Hoteles</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- IMAGEN PRINCIPAL -->
+            <div id="adbox">
+
+                <img src="images/primer imagen.png"
+                     alt="Paisaje turístico de Francisco Morazán">
+
+                <div class="details">
+
+                    <h1>Argueta Explora</h1>
+
+                    <h2>Descubre, Explora, Disfruta</h2>
+
+                    <p>
+                        Conoce los hermosos paisajes, la cultura y los
+                        lugares turísticos del departamento de Francisco
+                        Morazán, Honduras.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CONTENIDO PRINCIPAL -->
+            <div id="contents">
+
+                <div id="main">
+
+                    <h1>Bienvenidos a Francisco Morazán</h1>
+
+                    <p>
+                        Te damos la bienvenida a
+                        <strong>Argueta Explora</strong>, un sitio dedicado
+                        a mostrar las maravillas del departamento de
+                        Francisco Morazán. Aquí podrás conocer sus pueblos,
+                        paisajes, tradiciones y atractivos turísticos.
+                    </p>
+
+                    <h2>Descubre lugares maravillosos</h2>
+
+                    <p>
+                        Francisco Morazán se encuentra en la zona central
+                        de Honduras. Su cabecera departamental es
+                        Tegucigalpa, también capital del país. Este
+                        departamento combina ciudades, pueblos coloniales,
+                        montañas, bosques y espacios naturales.
+                    </p>
+
+                    <h2>¿Qué puedes conocer?</h2>
+
+                    <ul>
+                        <li>
+                            <strong>Valle de Ángeles:</strong>
+                            un pueblo conocido por sus artesanías,
+                            tiendas de recuerdos y ambiente tradicional.
+                        </li>
+
+                        <li>
+                            <strong>Santa Lucía:</strong>
+                            un pintoresco pueblo con calles empedradas,
+                            arquitectura tradicional y hermosas vistas.
+                        </li>
+
+                        <li>
+                            <strong>Parque Nacional La Tigra:</strong>
+                            un área protegida con bosques nublados,
+                            senderos y gran diversidad de flora y fauna.
+                        </li>
+
+                        <li>
+                            <strong>Tegucigalpa:</strong>
+                            la capital de Honduras, con iglesias,
+                            plazas, museos y edificios históricos.
+                        </li>
+                    </ul>
+
+                    <h2>Nuestra misión</h2>
+
+                    <p>
+                        Nuestra misión es promover el turismo local,
+                        dar a conocer la belleza natural y cultural
+                        de Francisco Morazán e invitar a las personas
+                        a cuidar y respetar los lugares que visitan.
+                    </p>
+
+                    <h2>Argueta Explora: Descubre, explora y disfruta</h2>
+
+                    <p>
+                        Prepárate para conocer nuevos destinos, disfrutar
+                        de la naturaleza, probar la gastronomía hondureña
+                        y aprender más sobre las tradiciones de nuestra
+                        tierra.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- PIE DE PÁGINA -->
+            <div id="footer">
+
+                <div id="connect">
+
+                    <a href="index.html">Inicio</a> |
+                    <a href="about.html">Historia</a> |
+                    <a href="rooms.html">Lugares turísticos</a> |
+                    <a href="dives.html">Naturaleza</a> |
+                    <a href="foods.html">Gastronomía</a> |
+                    <a href="news.html">Hoteles</a> |
+                    <a href="contact.html">Contacto</a>
+
+                </div>
+
+                <p>
+                    © 2026 Argueta Explora.
+                    Descubre, Explora, Disfruta.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Argueta Explora</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+        /* DISEÑO GENERAL */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #26352b;
+            font-size: 16px;
+        }
+
+        #page {
+            width: 1000px;
+            max-width: 96%;
+            margin: 0 auto;
+        }
+
+        /* LOGO */
+        #logo img {
+            width: 118px;
+            height: 112px;
+            object-fit: contain;
+        }
+
+        /* MENÚ DE NAVEGACIÓN */
+        #navigation ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            padding: 0;
+        }
+
+        #navigation ul li a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        #navigation ul li.selected a {
+            color: #f4d16b;
+        }
+
+        /* CONTENEDOR */
+        #contents {
+            margin: 20px auto;
+        }
+
+        #contents .box {
+            background: #ffffff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(20, 55, 32, 0.14);
+        }
+
+        #contact.body {
+            padding: 32px 38px;
+            background: #ffffff;
+            color: #26352b;
+            overflow: hidden;
+        }
+
+        /* TÍTULOS DESTACADOS */
+        #contact h1 {
+            color: #205b36;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            text-align: center;
+            line-height: 1.2;
+            margin: 0 0 12px;
+            padding-bottom: 14px;
+            border-bottom: 3px solid #e8bd4e;
+        }
+
+        #contact .subtitulo {
+            color: #a46e18;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0 0 18px;
+        }
+
+        #contact .introduccion {
+            max-width: 750px;
+            margin: 0 auto 24px;
+            text-align: center;
+            color: #45544a;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        #contact h2 {
+            color: #205b36;
+            font-size: 24px;
+            font-weight: 800;
+            margin: 0 0 16px;
+        }
+
+        #contact p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 8px 0;
+        }
+
+        /* FORMULARIO */
+        #contact form {
+            max-width: 700px;
+            margin: 0 auto 28px;
+            padding: 25px;
+            background: #f5f8f3;
+            border: 1px solid #dce8d9;
+            border-radius: 12px;
+        }
+
+        #contact table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #contact td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        #contact td:first-child {
+            width: 185px;
+        }
+
+        #contact label {
+            display: inline-block;
+            padding-top: 10px;
+            color: #244b32;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        #contact .txtfield,
+        #contact textarea {
+            display: block;
+            width: 100%;
+            padding: 12px 13px;
+            border: 1px solid #bdcbbd;
+            border-radius: 7px;
+            background: #ffffff;
+            color: #26352b;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        #contact .txtfield:focus,
+        #contact textarea:focus {
+            border-color: #287344;
+            box-shadow: 0 0 0 3px rgba(40, 115, 68, 0.13);
+        }
+
+        #contact .txtfield::placeholder,
+        #contact textarea::placeholder {
+            color: #7d887f;
+        }
+
+        #contact textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* BOTÓN */
+        #contact .btn {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 7px;
+            background: #267342;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        #contact .btn:hover {
+            background: #194d2c;
+            transform: translateY(-1px);
+        }
+
+        /* INFORMACIÓN DE CONTACTO */
+        #contact .info-contacto {
+            margin-top: 10px;
+            padding: 24px;
+            background: #edf5eb;
+            border-left: 5px solid #287344;
+            border-radius: 8px;
+        }
+
+        #contact .info-contacto h2 {
+            margin-bottom: 12px;
+        }
+
+        #contact .info-contacto p {
+            margin: 9px 0;
+            color: #35473a;
+        }
+
+        #contact .info-contacto strong {
+            color: #205b36;
+        }
+
+        #contact .frase-final {
+            margin-top: 22px;
+            padding: 17px;
+            border-radius: 8px;
+            background: #fff6dd;
+            color: #654b15;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+
+        /* PIE DE PÁGINA */
+        #footer {
+            margin-top: 18px;
+        }
+
+        #footer p {
+            color: #ffffff;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 12px auto;
+            padding: 0 12px 12px;
+        }
+
+        #footer .navigation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        #footer .navigation a {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* PANTALLAS PEQUEÑAS */
+        @media (max-width: 700px) {
+            #page {
+                max-width: 100%;
+            }
+
+            #contents {
+                margin: 10px;
+            }
+
+            #contact.body {
+                padding: 22px 16px;
+            }
+
+            #contact h1 {
+                font-size: 29px;
+            }
+
+            #contact .introduccion {
+                font-size: 15px;
+            }
+
+            #contact form {
+                padding: 15px 12px;
+            }
+
+            #contact table,
+            #contact tbody,
+            #contact tr,
+            #contact td {
+                display: block;
+                width: 100%;
+            }
+
+            #contact td {
+                padding: 5px 0;
+            }
+
+            #contact td:first-child {
+                width: 100%;
+            }
+
+            #contact label {
+                padding-top: 5px;
+            }
+
+            #contact .btn {
+                width: 100%;
+            }
+
+            #contact .info-contacto {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background">
+
+        <div id="page">
+
+            <!-- ENCABEZADO -->
+            <div id="header">
+
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png"
+                             alt="Logo de Argueta Explora"
+                             width="118"
+                             height="112">
+                    </a>
+                </div>
+
+                <!-- MENÚ PRINCIPAL -->
+                <div id="navigation">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Historia</a></li>
+                        <li><a href="rooms.html">Lugares turísticos</a></li>
+                        <li><a href="dives.html">Naturaleza</a></li>
+                        <li><a href="foods.html">Gastronomía</a></li>
+                        <li><a href="news.html">Hoteles</a></li>
+                        <li class="selected"><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- CONTENIDO PRINCIPAL -->
+            <div id="contents">
+                <div class="box">
+                    <div id="contact" class="body">
+
+                        <p class="subtitulo">Descubre · Explora · Disfruta</p>
+
+                        <h1>¡Contáctanos!</h1>
+
+                        <p class="introduccion">
+                            En <strong>Argueta Explora</strong> queremos ayudarte
+                            a descubrir la belleza de Francisco Morazán.
+                            Envíanos tus preguntas, comentarios o sugerencias
+                            sobre sus destinos turísticos, naturaleza,
+                            gastronomía y hoteles.
+                        </p>
+
+                        <!-- FORMULARIO DE CONTACTO -->
+                        <form action="index.html" method="get">
+
+                            <table>
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <label for="nombre">Nombre completo</label>
+                                        </td>
+                                        <td>
+                                            <input
+                                                type="text"
+                                                id="nombre"
+                                                name="nombre"
+                                                class="txtfield"
+                                                placeholder="Escribe tu nombre"
+                                                autocomplete="name"
+                                                required>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label for="correo">Correo electrónico</label>
+                                        </td>
+                                        <td>
+                                            <input
+                                                type="email"
+                                                id="correo"
+                                                name="correo"
+                                                class="txtfield"
+                                                placeholder="ejemplo@correo.com"
+                                                autocomplete="email"
+                                                required>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label for="asunto">Asunto</label>
+                                        </td>
+                                        <td>
+                                            <input
+                                                type="text"
+                                                id="asunto"
+                                                name="asunto"
+                                                class="txtfield"
+                                                placeholder="¿Sobre qué deseas consultar?"
+                                                required>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label for="mensaje">Tu mensaje</label>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                id="mensaje"
+                                                name="mensaje"
+                                                placeholder="Escribe tu mensaje aquí..."
+                                                required></textarea>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input
+                                                type="submit"
+                                                value="Enviar mensaje"
+                                                class="btn">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </form>
+
+                        <!-- DATOS DE CONTACTO -->
+                        <div class="info-contacto">
+
+                            <h2>Conoce Argueta Explora</h2>
+
+                            <p>
+                                <strong>📍 Ubicación:</strong>
+                                Francisco Morazán, Honduras.
+                            </p>
+
+                            <p>
+                                <strong>✉ Correo electrónico:</strong>
+                                <a href="mailto:arguetaabigail588@gmail.com">
+                                    arguetaabigail588@gmail.com
+                                </a>
+                            </p>
+
+                            <p>
+                                <strong>☎ Teléfono:</strong>
+                                <a href="tel:96442928">9644-2928</a>
+                            </p>
+
+                            <p>
+                                <strong>🌿 Nuestro objetivo:</strong>
+                                Promover el turismo de Francisco Morazán,
+                                dando a conocer sus atractivos naturales,
+                                tradiciones, gastronomía y destinos turísticos.
+                            </p>
+
+                        </div>
+
+                        <div class="frase-final">
+                            ¡Francisco Morazán te espera! Descubre nuevos
+                            lugares y vive la aventura con Argueta Explora.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PIE DE PÁGINA -->
+        <div id="footer">
+
+            <div>
+                <ul class="navigation">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Historia</a></li>
+                    <li><a href="rooms.html">Lugares turísticos</a></li>
+                    <li><a href="dives.html">Naturaleza</a></li>
+                    <li><a href="foods.html">Gastronomía</a></li>
+                    <li><a href="news.html">Hoteles</a></li>
+                    <li class="active"><a href="contact.html">Contacto</a></li>
+                </ul>
+
+                <div id="connect">
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="facebook"
+                       aria-label="Facebook"></a>
+
+                    <a href="https://www.pinterest.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="pinterest"
+                       aria-label="Pinterest"></a>
+                </div>
+            </div>
+
+            <p>
+                © 2026 Argueta Explora - Francisco Morazán, Honduras.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+</html>

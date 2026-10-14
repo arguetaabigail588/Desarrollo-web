@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturaleza | Argueta Explora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #logo img { 
+            width: 118px; 
+            height: 112px; 
+            object-fit: contain; 
+        }
+
+        #contents .body { 
+            padding: 24px; 
+        }
+
+        #contents h1 { 
+            text-align: center; 
+            color: #246b5c; 
+        }
+
+        #contents p { 
+            line-height: 1.7; 
+        }
+
+        /* --- Estilos optimizados para la sección de videos --- */
+        .video-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        .video-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .video-card h2 {
+            color: #246b5c;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000000;
+            border: 2px solid #316e66;
+        }
+
+        .video-wrapper video {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+<div id="background">
+    <div id="page">
+        <div id="header">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Argueta Explora"></a>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Historia</a></li>
+                    <li><a href="rooms.html">Lugares turísticos</a></li>
+                    <li class="selected"><a href="dives.html">Naturaleza</a></li>
+                    <li><a href="foods.html">Gastronomía</a></li>
+                    <li><a href="news.html">Hoteles</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contents">
+            <div class="box">
+                <div>
+                    <div class="body">
+                        <h1>Naturaleza de Francisco Morazán</h1>
+                        <p style="text-align: center;">Conoce los paisajes, montañas y espacios naturales de Francisco Morazán a través de estos videos.</p>
+
+                        <div class="video-grid">
+                            <!-- Video 1 -->
+                            <div class="video-card">
+                                <h2>Parque Nacional La Tigra</h2>
+                                <div class="video-wrapper">
+                                    <video controls preload="metadata" poster="images/poster-la-tigra.jpg">
+                                        <source src="videos/la-tigra.mp4" type="video/mp4">
+                                        Tu navegador no soporta la reproducción de video.
+                                    </video>
+                                </div>
+                            </div>
+
+                            <!-- Video 2 -->
+                            <div class="video-card">
+                                <h2>Cerro El Picacho</h2>
+                                <div class="video-wrapper">
+                                    <video controls preload="metadata" poster="images/poster-el-picacho.jpg">
+                                        <source src="videos/el-picacho.mp4" type="video/mp4">
+                                        Tu navegador no soporta la reproducción de video.
+                                    </video>
+                                </div>
+                            </div>
+
+                            <!-- Video 3 -->
+                            <div class="video-card">
+                                <h2>Valle de Ángeles</h2>
+                                <div class="video-wrapper">
+                                    <video controls preload="metadata" poster="images/poster-valle-angeles.jpg">
+                                        <source src="videos/valle-angeles.mp4" type="video/mp4">
+                                        Tu navegador no soporta la reproducción de video.
+                                    </video>
+                                </div>
+                            </div>
+
+                            <!-- Video 4 -->
+                            <div class="video-card">
+                                <h2>Paisajes de Francisco Morazán</h2>
+                                <div class="video-wrapper">
+                                    <video controls preload="metadata" poster="images/poster-naturaleza.jpg">
+                                        <source src="videos/naturaleza.mp4" type="video/mp4">
+                                        Tu navegador no soporta la reproducción de video.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div>
+                <ul class="navigation">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Historia</a></li>
+                    <li><a href="rooms.html">Lugares turísticos</a></li>
+                    <li class="active"><a href="dives.html">Naturaleza</a></li>
+                    <li><a href="foods.html">Gastronomía</a></li>
+                    <li><a href="news.html">Hoteles</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <p>© 2026 Argueta Explora. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

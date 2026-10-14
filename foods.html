@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gastronomía de Francisco Morazán</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+        /* CONTENIDO PRINCIPAL */
+        #contents {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #contents .body {
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        #contents .body h1 {
+            color: #316e66;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        #contents .body > p {
+            color: #5a4535;
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* LISTA DE TARJETAS */
+        #contents .body #foods {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            margin: 10px auto;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        /* TARJETAS */
+        #contents .body #foods li {
+            display: block;
+            float: none;
+            clear: both;
+            width: 100%;
+            max-width: 750px;
+            height: auto !important;
+            margin: 0 auto !important;
+            padding: 18px;
+            box-sizing: border-box;
+
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            overflow: hidden;
+
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.13);
+            transition: box-shadow 0.3s ease;
+        }
+
+        #contents .body #foods li:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
+        }
+
+        /* IMÁGENES COMPLETAS, SIN RECORTAR */
+        #contents .body #foods li img {
+            display: block;
+            float: none;
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 380px !important;
+            margin: 0 auto 15px !important;
+            padding: 0;
+
+            object-fit: contain !important;
+            object-position: center center;
+
+            border: none;
+            border-radius: 9px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        /* TÍTULOS */
+        #contents .body #foods li h2 {
+            display: block;
+            float: none;
+            clear: both;
+
+            color: #316e66;
+            font-size: 27px;
+            line-height: 1.3;
+            text-align: center;
+
+            margin: 12px 0;
+            padding: 0;
+        }
+
+        /* SUBTÍTULOS */
+        #contents .body #foods li span {
+            display: block;
+            color: #2c9688;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+            margin: 8px 0 15px;
+        }
+
+        /* DESCRIPCIONES */
+        #contents .body #foods li p {
+            display: block;
+            float: none;
+
+            color: #5a4535;
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+
+            margin: 10px 0;
+            padding: 0;
+            overflow-wrap: break-word;
+        }
+
+        /* TABLETAS Y TELÉFONOS */
+        @media screen and (max-width: 600px) {
+            #contents {
+                width: 100%;
+                padding: 0 8px;
+                box-sizing: border-box;
+            }
+
+            #contents .body {
+                padding: 18px 10px;
+            }
+
+            #contents .body h1 {
+                font-size: 26px;
+            }
+
+            #contents .body #foods {
+                gap: 8px;
+                margin: 8px auto;
+            }
+
+            #contents .body #foods li {
+                width: 100%;
+                max-width: 100%;
+                padding: 12px;
+                border-radius: 11px;
+            }
+
+            #contents .body #foods li img {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: 260px !important;
+                object-fit: contain !important;
+                object-position: center center;
+                border-radius: 7px;
+            }
+
+            #contents .body #foods li h2 {
+                font-size: 22px;
+            }
+
+            #contents .body #foods li span {
+                font-size: 16px;
+            }
+
+            #contents .body #foods li p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="background">
+
+    <div id="page">
+
+        <!-- ENCABEZADO -->
+        <div id="header">
+
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png"
+                         alt="Logo de Francisco Morazán"
+                         height="112"
+                         width="118">
+                </a>
+            </div>
+
+            <!-- MENÚ PRINCIPAL -->
+            <div id="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Historia</a></li>
+                    <li><a href="rooms.html">Lugares turísticos</a></li>
+                    <li><a href="dives.html">Naturaleza</a></li>
+                    <li class="selected">
+                        <a href="foods.html">Gastronomía</a>
+                    </li>
+                    <li><a href="news.html">hoteles</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div id="contents">
+
+            <div class="box">
+                <div>
+                    <div class="body">
+
+                        <h1>Gastronomía de Francisco Morazán</h1>
+
+                        <p>
+                            El departamento de Francisco Morazán cuenta con
+                            una variedad de comidas tradicionales hondureñas.
+                            Sus municipios ofrecen sabores y costumbres que
+                            forman parte de la cultura nacional.
+                        </p>
+
+                        <ul id="foods">
+
+                            <!-- VALLE DE ÁNGELES -->
+                            <li>
+                                <img
+                                    src="images/comida-tipica-valle-de-angeles.jpg"
+                                    alt="Comidas típicas de Valle de Ángeles">
+
+                                <h2>Valle de Ángeles</h2>
+
+                                <span>Comidas típicas</span>
+
+                                <p>
+                                    Valle de Ángeles es conocido por su ambiente
+                                    turístico, sus artesanías y sus establecimientos
+                                    de comida. Los visitantes pueden disfrutar de
+                                    diferentes platillos tradicionales hondureños.
+                                </p>
+                            </li>
+
+                            <!-- CANTARRANAS -->
+                            <li>
+                                <img
+                                    src="images/comida-tipica-cantarranas.jpg"
+                                    alt="Comidas típicas de Cantarranas">
+
+                                <h2>Cantarranas</h2>
+
+                                <span>Gastronomía tradicional</span>
+
+                                <p>
+                                    Cantarranas conserva las tradiciones de la
+                                    cocina hondureña. En este municipio se pueden
+                                    encontrar comidas preparadas con ingredientes
+                                    de la gastronomía nacional.
+                                </p>
+                            </li>
+
+                            <!-- SANTA LUCÍA -->
+                            <li>
+                                <img
+                                    src="images/comida-tipica-santa-lucia.jpg"
+                                    alt="Comidas típicas de Santa Lucía">
+
+                                <h2>Santa Lucía</h2>
+
+                                <span>Sabores tradicionales</span>
+
+                                <p>
+                                    Santa Lucía es un destino turístico donde
+                                    los visitantes pueden encontrar restaurantes,
+                                    comidas tradicionales y bebidas para disfrutar
+                                    durante su visita.
+                                </p>
+                            </li>
+
+                            <!-- TEGUCIGALPA Y COMAYAGÜELA -->
+                            <li>
+                                <img
+                                    src="images/comia-tipicas-de-francisco-morazan.jpg"
+                                    alt="Comidas típicas de Francisco Morazan">
+
+                                <h2>Francisco Morazan</h2>
+
+                                <span>Comida hondureña</span>
+
+                                <p>
+                                    En Francisco Morazan se encuentran
+                                    restaurantes y mercados donde se pueden
+                                    disfrutar baleadas, tortillas, tamales y
+                                    otros alimentos tradicionales de Honduras.
+                                </p>
+                            </li>
+
+                            <!-- SAN JUAN DE FLORES -->
+                            <li>
+                                <img
+                                    src="images/comida-tipica-san-juan-flores.jpg"
+                                    alt="Comidas típicas de San Juan de Flores">
+
+                                <h2>San Juan de Flores</h2>
+
+                                <span>Tradición y sabor</span>
+
+                                <p>
+                                    San Juan de Flores forma parte de la riqueza
+                                    cultural de Francisco Morazán. Su gastronomía
+                                    refleja las costumbres y los sabores de la
+                                    cocina hondureña.
+                                </p>
+                            </li>
+
+                            <!-- BEBIDAS TRADICIONALES -->
+                            <li>
+                                <img
+                                    src="images/bebidas-tradicionales-de-francisco-morazan.jpg"
+                                    alt="Bebidas tradicionales hondureñas">
+
+                                <h2>Bebidas tradicionales</h2>
+
+                                <span>Bebidas hondureñas</span>
+
+                                <p>
+                                    Entre las bebidas tradicionales de Honduras
+                                    se encuentran el café, la horchata y los
+                                    refrescos naturales preparados con frutas.
+                                </p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <div id="footer">
+
+        <div>
+
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Historia</a></li>
+                <li><a href="rooms.html">Lugares turísticos</a></li>
+                <li><a href="dives.html">Naturaleza</a></li>
+                <li class="active">
+                    <a href="foods.html">Gastronomía</a>
+                </li>
+                <li><a href="news.html">Hoteles</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+
+            <div id="connect">
+                <a href="#" class="pinterest" aria-label="Pinterest"></a>
+                <a href="#" class="facebook" aria-label="Facebook"></a>
+                <a href="#" class="twitter" aria-label="Twitter"></a>
+                <a href="#" class="googleplus" aria-label="Google Plus"></a>
+            </div>
+
+        </div>
+
+        <p>
+            © 2026 Gastronomía de Francisco Morazán.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
